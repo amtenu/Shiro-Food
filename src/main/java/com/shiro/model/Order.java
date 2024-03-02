@@ -30,6 +30,7 @@ public class Order {
     @ManyToOne
     private Address deliveryAddress;
 
+    @OneToMany
     private List<OrderItem> items;
 
     private int totalItem;
